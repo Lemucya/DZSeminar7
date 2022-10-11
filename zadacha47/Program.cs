@@ -14,10 +14,10 @@ for (int i = 0; i < m; i++)
 {
     for (int j = 0; j < n; j++)
     {
-        twoDArray[i, j] = new Random().NextDouble()* (10 + 10) - 10;
-        Console.Write("{0:0.##}", twoDArray[i, j]);
+        twoDArray[i, j] = Convert.ToDouble(new Random().Next(-10, 10)) / 10;
+        Console.Write("{0:0.#}", twoDArray[i, j] + "\t");
         Console.Write(" ");
     }
-Console.WriteLine();
+    Console.WriteLine();
 }
 
